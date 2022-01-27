@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { VideosContainer } from "../components/HomePage/VideosContainer";
-import { Navbar } from "../components/shared/Navbar";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { VideosContainer } from '../components/HomePage/VideosContainer'
+import { Navbar } from '../components/shared/Navbar'
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <footer>Anime Online</footer>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
