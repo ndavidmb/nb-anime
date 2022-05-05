@@ -6,9 +6,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   background-color: #f6f8fa;
+  overflow: hidden;
 }
 
 a {
@@ -18,4 +20,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(13rem, 1fr)
+  );
+}
+
+.card:hover {
+  height: 18.2rem;
+  width: 13.2rem;
+  transition: 0.3s;
 }

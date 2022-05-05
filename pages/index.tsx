@@ -1,22 +1,27 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { VideosContainer } from '../components/HomePage/VideosContainer'
-import { Navbar } from '../components/shared/Navbar'
+import { AsideMenu } from '../components/AsideMenu'
+import { VideosContainer } from '../components/HomePage'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>NBAnime</title>
-        <meta name="description" content="Ver anime en hd" />
+        <title>DMAnime</title>
+        <meta
+          name="description"
+          content="Ver anime en hd"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-      <VideosContainer />
-
-      <footer>Anime Online</footer>
-    </div>
+      <section className="flex w-full bg-gray-100 h-screen">
+        <AsideMenu />
+        <div className="overflow-auto p-5 w-3/4">
+          <VideosContainer />
+        </div>
+      </section>
+    </>
   )
 }
 
