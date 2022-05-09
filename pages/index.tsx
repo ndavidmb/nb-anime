@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { AsideMenu } from '../components/AsideMenu'
-import { VideosContainer } from '../components/HomePage'
+import { VideosContainer } from '../components/home/VideosContainer/VideosContainer'
+import { Container } from '../ui/Container'
 
 const Home: NextPage = () => {
   return (
@@ -15,12 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="flex w-full bg-gray-100 h-screen">
-        <AsideMenu />
-        <div className="overflow-auto p-5 w-3/4">
-          <VideosContainer />
-        </div>
-      </section>
+      <Container>
+        <VideosContainer />
+      </Container>
     </>
   )
 }

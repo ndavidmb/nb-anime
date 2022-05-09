@@ -46,16 +46,7 @@ textarea:focus {
   background: #555;
 }
 
-.cards-grid {
-  display: grid;
-  gap: 0.5rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 18rem;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(13rem, 1fr)
-  );
-}
+
 
 .card:hover {
   height: 18.2rem;

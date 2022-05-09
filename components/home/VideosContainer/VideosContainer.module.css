@@ -1,0 +1,10 @@
+.cards-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(13rem, 1fr)
+  );
+}

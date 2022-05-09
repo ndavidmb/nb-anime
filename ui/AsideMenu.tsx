@@ -6,7 +6,7 @@ import {
   BsHeartFill,
   BsHouseFill
 } from 'react-icons/bs'
-import { MenuButton } from '../ui/MenuButton'
+import { MenuButton } from './MenuButton'
 
 export const AsideMenu = () => {
   return (

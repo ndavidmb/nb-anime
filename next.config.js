@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['pics.filmaffinity.com'],
+    domains: ['pics.filmaffinity.com', 'universo-nintendo.com.mx'],
   },
 }
 
